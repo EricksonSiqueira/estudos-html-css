@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id e class</title>
+
+    <style>/* corpo do css*/
+        h1 {
+            background: red;
+        }
+        h1 {/*Vai ficar azul porque o segundo sobreescreve o primeiro*/
+            background: blue;
+        }
+        p {
+            background: blueviolet;
+        }
+        #titulo1 {
+            background: brown;
+        }
+        .fundo-vermelho {
+            background: red !important;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo1" 
+    class="fundo-vermelho borda-esquerda"><!--o id não pode se repetir-->
+    <!--A classe pode se repetir e pode ter mais de uma classe por item.-->
+        Texto aqui
+    </h1>
+    <h1 id="titulo2" class="fundo-vermelho"><!--forma correta-->
+        Outro texto
+    </h1>
+    <p>Não <b>é afetado</b> pela cor</p>
+</body>
+</html>
