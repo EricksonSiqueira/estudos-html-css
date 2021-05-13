@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pensando em HTML e CSS</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/7a33204b-893d-4792-8494-b9d6cbc73848/a0490f7e-b2dd-44ed-99bb-9c31aa04f7f5/BR-pt-20210502-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+            background-size: cover;
+            background-position: top center;
+        }
+        #heading {
+            background: rgba(0, 0, 0, 0.5);
+        }
+        #heading div{
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin:0 auto;
+
+        }
+        .txtcenter {
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 0.3%;
+        }
+        .hd1 {
+            margin-top: 12%;
+        }
+        #heading .h1 {
+            padding: 0;
+            font-size: 35px;
+            text-transform: uppercase;
+        }
+        #heading a{
+            color: white;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+        #email {
+            width: 550px;
+            height: 60px;
+            margin-left: 23%;
+        }
+        #botao-vamos{
+            background-color: red;
+            height: 70px;
+            width: 15%;
+            font-size: 200%;
+            color: white;
+            margin-left: -0.3%;
+            margin-top: 0.5%;
+        }
+
+    </style>
+</head>
+<body>
+   <header id="heading">
+       <div>
+       <h1 class="h1">
+        <a href="#">Netflix</a>
+       </h1>
+       <h2 class="h1 ">
+        <button>Entrar</button>
+       </h2>
+   </header>
+   <header id="centro">
+       <h1 class="txtcenter hd1" style="font-size: 400%;">
+            Filmes, séries e muito mais
+       </h1>
+       <h2 class="txtcenter " style="font-size: 400%;">
+           Sem limites.
+
+       </h2>
+       <h3 class="txtcenter" style="font-size: 200%;">
+        Assista onde quiser. Cancele quando quiser.
+       </h3>
+       <h4 class="txtcenter" style="font-size: 150%;">
+        Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.
+       </h4>
+       <form>
+        <input type="text" name="Email" id="email">
+        <button id="botao-vamos">Vamos lá ></button>
+        </form>
+   </header>
+
+</body>
+</html>
