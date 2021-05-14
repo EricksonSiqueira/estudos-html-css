@@ -79,11 +79,71 @@
       </p>
 
       <p>
+        <!--Input de senha-->
+        <label for="senha">Digite sua senha</label>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+      </p>
+
+      <p>
+        <!--Barrinha com range (bem cagado não funciona direito)-->
+        <label for="range">Range</label>
+        <input type="range" name="range" id="range" list="datalist">
+
+        <datalist id="datalist">
+          <option value="0" label="0%"></option>
+          <option value="10"></option>
+          <option value="20"></option>
+          <option value="30"></option>
+          <option value="40"></option>
+          <option value="50" label="50%"></option>
+          <option value="60"></option>
+          <option value="70"></option>
+          <option value="80"></option>
+          <option value="90"></option>
+          <option value="100"label="100%"></option>
+
+        </datalist>
+      </p>
+
+      <p>
+        <!--Input de URL-->
+        <label for="url">Sua URL:</label>
+        <input type="url" name="url" id="url" placeholder="URL">
+      </p>
+
+      <p>
           <!--Botões-->
           <!--Manda o formulário-->
           <button type="submit">Enviar</button>
           <!--Reseta o input-->
           <button type="reset">Resetar</button>
+      </p>
+
+      <p>
+        <!--Input de busca, muito parecido com o de texto mas com um X pra apagar as mensagens-->
+        <label for="busca">Pesquisar:</label>
+        <input type="search" name="busca" id="busca" placeholder="pesquise">
+      </p>
+
+      <p>
+        <label for="select">Selecione:</label>
+        <select name="select" id="select"> <!--barra de opções-->
+          <optgroup label="Parte 1"><!--Grupo das opções-->
+          <option value="valor1">Valor 1</option> <!--opções-->
+          <option value="valor2">Valor 2</option>
+        </optgroup>
+        <optgroup label="Parte 2"> <!-- Outro grupo de opções-->
+          <option value="valor3" disabled>Valor 3</option>
+          <option value="valor4" selected>Valor 4</option>
+        </optgroup>
+        
+        </select>
+      </p>
+
+      <p>
+        <!--Input de texto com área bem maior-->
+        <label for="txtarea">Área de texto<br></label>
+        <textarea name="txtarea" id="" cols="50" rows="10" placeholder="Digite seu texto aqui..."></textarea>
       </p>
       
 
