@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario e Inputs</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        label{
+        cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <!--Input de texto-->
+      <p>Meu primeiro form</p>
+      <p>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome">
+      </p>
+      <p>
+          <!--Input radio-->
+        Gênero:<br>
+        <label for="Feminino">Feminino</label>
+        <input type="radio" id="Feminino" name="genero" value="feminino"><br>
+        <label for="Masculino">Masculino</label>
+        <input type="radio" id="Masculino" name="genero" value="masculino"><br>
+        <label for="Nenhum">Nenhum</label>
+        <input type="radio" id="Nenhum" name="genero" value="nenhum" checked>
+      </p>
+      <p>
+        <!--Caixa única-->
+        <label for="dev">Sou dev</label>
+        <input type="checkbox" name="dev" id="dev" value="sim">
+      </p>
+
+        <p>
+          <!--Input de data-->
+          <label for="data">Data:<br></label>
+          <input type="date" name="data" id="data" value="2021-05-14">
+        </p>
+        <!--Input de data com hora-->
+            <label for="datetime">Data tipo time:<br></label>
+            <input type="datetime-local" name="datetime" id="datetime" value="2021-05-14T15:37">
+        </p>
+
+        <p>
+            <!--Input de hora-->
+            <label for="time">Hora:<br></label>
+            <input type="time" name="time" id="time" value="15:40:30">
+        </p>
+        <p>
+            <!--Input de cor-->
+            <label for="cor">Cor preferida</label>
+            <input type="color" name="cor" id="cor" value="#0000ff">
+        </p>
+        <p>
+            <!--Botão de email-->
+            <label for="email">Email<br></label>
+            <input type="email" name="email" id="email"placeholder="ex: exemplo@exemplo.com">
+        </p>
+
+        <p>
+            <!--Pedindo arquivo-->
+            <label for="arquivo">Seu arquivo<br></label>
+            <input type="file" name="arquivo" id="arquivo" accept=".png,.svg,image/*" multiple>
+        </p>
+          
+      </p>
+    
+      <p>
+        <!--Input de número-->
+        <label for="numero">Digite um número:</label>
+        <input type="number" name="numero" id="numero" placeholder="25" min="10" max="50" step="5">
+      </p>
+
+      <p>
+          <!--Botões-->
+          <!--Manda o formulário-->
+          <button type="submit">Enviar</button>
+          <!--Reseta o input-->
+          <button type="reset">Resetar</button>
+      </p>
+      
+
+    </form>
+    
+</body>
+</html>
