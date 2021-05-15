@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body div section p,/*seleção de descendente*/
+body div section h1 /*seleção de descendente*/{
+    color: red;
+}
+
+.color-blue /* seleção por classe*/{
+    color: royalblue;
+}
+
+.main-content h2 /* seleção com classe e descendente*/{
+    font-style: italic;
+}
+
+.main-content .main /* seleção de classe para classe*/{
+    color: purple;
+}
+
+.main-content h2.main /* seleção misturada*/{
+    color: sandybrown;
+}
+
+.pai.filha /* se colocar sem espaço o elemento term que ter as 2 classes as mesmo tempo*/{
+    color: springgreen;
+}
+
+.pai > .filha > .filha/* > seletor de filho DIRETO*/{
+    color: lightcoral;
+}
+
+div {
+    color: initial;
+    margin-left: 10px;
+}
