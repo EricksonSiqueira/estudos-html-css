@@ -36,3 +36,17 @@ div {
     color: initial;
     margin-left: 10px;
 }
+
+.pai h1+p /* Adjacente sibling selector*/{
+    color: red;
+}
+ .pai h1~p /* General sibiling selector*/{
+     color: blue;
+ }
+ .um + .dois {
+     color: purple;
+ }
+
+ [meu-atributo="valor"] /*seleção por atributo*/{
+    color: slateblue;
+ }
