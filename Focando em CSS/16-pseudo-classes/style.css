@@ -1,0 +1,56 @@
+
+.heading {
+    transition: all 1s ease-in-out; /*MUITO MANEIRO!! Adiciona um efeito de transiçaõ (para quem vai/ tempo / tipo de efeito)*/
+}
+
+.heading:hover /*Quando colocar o mouse em cima (muito maneiro)*/{
+    background:red;
+}
+
+a {
+    color: darkorange;
+}
+
+a:link /*Somente links não visitados*/{
+    color: darkolivegreen;
+}
+
+a:visited /*Somente links que foram visitados*/{
+    color: darkorchid;
+}
+
+a:hover {
+    background-color: rgba(0, 0, 0, 0.171);
+    text-decoration: none;
+}
+
+a:active /*Enquanto o mouse estiver clicado*/{
+    background-color: darkred;
+}
+
+input:focus /*Quando o elemento está em foco (clicado)*/{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+    border: 1px solid black;
+}
+
+input:disabled /*Todos os elementos que estão desabilitados*/{
+    background-color: blue;
+    cursor:not-allowed; /*Cursor vira uma bolinha com risco*/
+}
+
+input:enabled /*Quando o elemento está ativo*/{
+    cursor: crosshair; /*mouse vira uma mira*/
+}
+
+.caixas:checked + .ola /*quando o input ta marcado o p muda de cor*/{
+    background-color: red;
+} 
+
+.pai .lista li:first-child /*Seleciona somente o primeiro filho*/{
+    color: blue;
+}
+
+.pai .lista li:last-child /*Seleciona somente o ultimo filho*/{
+    color: red;
+}
