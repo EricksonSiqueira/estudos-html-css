@@ -1,0 +1,19 @@
+[meu-atributo ~= "valor3"] /*seleciona por atributo quando tem varios separados por espaço*/{
+    color: red;
+}
+
+[atributo |= "valor"] /*atributo tem que começar com o parametro colocado e tem qeu ser seguido de um traço (meio cagado)*/ {
+    color: blue;
+}
+
+[atributo ^= "comecou"] /*o atributo tem que começar com o parametro passado, mas não necessariamente tem que ser igual (util)*/{
+    color:yellow;
+}
+
+[atributo $= "cou"] /* mesma coisa que o de cima porém tem que terminar e não começar*/{
+    color: green;
+}
+
+[atributo *= "caco"] /* o atributo deve conter o parametro passado, e ele pode estar em qualquer ordem e lugar*/{
+    color: indigo;
+}
