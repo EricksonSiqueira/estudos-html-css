@@ -45,6 +45,9 @@ input:enabled /*Quando o elemento está ativo*/{
 
 .caixas:checked + .ola /*quando o input ta marcado o p muda de cor*/{
     background-color: red;
+}
+.caixas:not(checked) + .ola /*quando o input ta marcado o p muda de cor*/{
+    background-color: yellow;
 } 
 
 .pai .lista li:first-child /*Seleciona somente o primeiro filho*/{
@@ -53,4 +56,8 @@ input:enabled /*Quando o elemento está ativo*/{
 
 .pai .lista li:last-child /*Seleciona somente o ultimo filho*/{
     color: red;
+}
+
+p:not(.meio) /*Seletor de negação, seleciona todos menos o passado de parâmetro*/{
+    color: blue;
 }
