@@ -61,3 +61,24 @@ input:enabled /*Quando o elemento está ativo*/{
 p:not(.meio) /*Seletor de negação, seleciona todos menos o passado de parâmetro*/{
     color: blue;
 }
+
+/*Os elementos precisão ser irmãos*/
+ul li:nth-child(odd) /*Seleciona todos os elementos com índice impar*/ {
+    color: red;
+}
+
+ul li:nth-child(even) /*Seleciona todos os elementos com índice par*/{
+    color: blue;
+}
+
+ul li:nth-child(5) /*Seleciona o elemento pelo índice*/{
+    color: blueviolet;
+}
+
+ul li:nth-child(3n) /*Selecionando pulando de 3 em 3 índices*/{
+    color: darkolivegreen;
+}
+
+ul li:nth-child(2n+3) /*Começa do número após o "+" pulando de 2 em 2 índices*/ {
+    color: rgba(20, 255, 51, 0.788);
+}
