@@ -1,0 +1,25 @@
+/*Ordem de especificidade:
+1- ID 1 0 0
+
+2- Classes,atributos e pseudo-classes 0 1 0
+
+3- Elementos e pseudo-elementos 0 0 1
+
+Ordem de prioridade
+!important
+style
+empate
+especificade
+*/
+
+#p {
+    background: tomato !important /*Força a sobrescrever*/;
+}
+
+#p.p {
+    background: violet;
+}
+
+body#b.bclass p#p.p.p2{
+    background: yellow;
+}
