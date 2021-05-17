@@ -1,0 +1,26 @@
+ul li:nth-child(1):after /*Adiciona e altera algum elemento do nosso desejo APÓS o elemento selecionado*/{
+    content: ' -';
+    background: red;
+    color: seagreen;
+}
+
+ul li:nth-child(3)::before /*Adiciona e altera algum elemento do nosso desejo ANTES do elemento selecionado*/{
+    content: '= ';
+    background: slateblue;
+}
+
+p::first-letter /*Seleciona a primeira letra*/{
+    font-size: 30px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+p::selection /*Quando o usuario selecionar com o mouse isto é aplicado*/{
+    background: black;
+    color: white;
+}
+
+#txt::placeholder /*Selecionando o texto do place houlder dentro do input txt (MUITO LEGAL)*/{
+    color: yellowgreen;
+}
