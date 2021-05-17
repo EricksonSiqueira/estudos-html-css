@@ -1,0 +1,18 @@
+.texto { /*inline não aceita qualquer modificação de tamanho*/
+    /*display: inline;*/
+    /*box-sizing: content-box; border, padding e margin são somadas ao conteúdo*/
+    /*box-sizing:padding-box;  padding vai ser acrescentado pra dentro*/
+    box-sizing: border-box;/*Soma tudo pra dentro menos a marging mais recomendado de usar*/
+    background: red;
+    width: 100%;
+    height: 100%;
+    overflow-x: auto; /* tudo que sair da div vai ficar em modo scroll*/
+    max-width: 1024px;
+    max-height: 720;
+    min-width: 200px;
+    min-height: 200px;
+    margin: 0 auto 50px auto;
+    padding: 50px;
+    border: 5px solid black;
+    border-radius: 30px;
+}
