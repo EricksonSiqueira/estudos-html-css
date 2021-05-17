@@ -1,0 +1,47 @@
+html /*root*/{
+    font-size: 62.5%; /*font-size = 10 para poder trabalhar como se fosse pixel*/
+    scroll-behavior: smooth; /*Faz a pagina descer suavemente ao ser clicado no link de redirecionamento*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pai {
+   /* width: 100vw; Tamanho da janela, logo 100% = 100% da janela horizontal*/
+    width: 50rem;
+    height: 100vh; /*Tamanho da janela vertical muito usado*/
+    background: rgb(88, 88, 228);
+    overflow: hidden;
+    position: relative;
+}
+
+.pai > div {
+    width: 50%; /*A porcentagem é relacionada ao elemento pai*/
+    height: 50rem;
+    background: red;
+}
+
+p {
+    font-size: 1em; /*A unidade EM se baseia no tamanho do elemento mais próximo*/
+}
+
+p {
+    font-size: 2rem; /*A unidade REM se baseia no tamanho do elemento root (HTML)*/
+
+}
+a {
+    font-size: 2vmax; /*Se baseia na MAIOR medida (altura ou largura)*/
+    font-size: 2vmin; /*Se baseia na MENOR medida (altura ou largura)*/
+}
+
+.color-one {
+    background: turquoise;
+}
+
+.color-two {
+    background: yellowgreen;
+}
+
+
