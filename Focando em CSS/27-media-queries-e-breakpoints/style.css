@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid::after { /*Selecionando conteudo depois do grid*/
+    content: ''; /*Criando conteudo vazio*/ 
+    display: block; 
+    clear: both; /*Limpando o conteudo que vem depois, pro proximo nao sair bugado */
+}
+.grid {
+    padding: 15px;
+}
+
+.grid .col {
+    width: 33.33%;
+    height: 300px;
+    float:left; /*Fala pro site que o contéudo só vai ocupar o tamanho real dele.*/
+    padding: 15px;
+}
+
+.grid .con {
+    width: 100%;
+    height: 100%;
+    background: red;
+
+}
+
+@media all and (max-width: 568px){
+    .grid .col {
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 569px) and (max-width: 768px){
+    .grid .col {
+        width: 50%;
+    }
+}
+
+@media all and (min-width: 769px) and (max-width: 1200px){
+    .grid .col {
+        width: 33.33%;
+    }
+}
+@media all and (min-width: 1200px){
+    .grid .col {
+        width: 25%;
+    }
+}
