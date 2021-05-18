@@ -1,0 +1,10 @@
+.pai {
+    height: 100px;
+    overflow-y: auto;
+}
+
+.sticky {
+    position: sticky;
+    background-color: grey;
+    top: 0;
+}
