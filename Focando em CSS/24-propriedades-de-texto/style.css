@@ -1,0 +1,20 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+p {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold; /*Quão escura a letra fica*/
+    direction: ltr; /*Escolhendo a direção do texto*/
+    letter-spacing: 0.2rem; /*Espaçamento entre as letras*/
+    word-spacing: 0.5rem; /*Espaçamento entre as palavras*/
+    line-height: 2.5rem; /*Espaço entre as linhas*/
+    text-align: left; /*Alinhamento do texto*/
+     /*text-decoration: overline underline; Decoração do texto da pra colocar mais de 1*/
+    text-indent: 5rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem red; /*sombra :primeiro parametro esquedar e direita, segundo altura terceiro opacidade quarto cor*/
+    text-transform: lowercase; /*Muda a formatação do texto*/
+}
