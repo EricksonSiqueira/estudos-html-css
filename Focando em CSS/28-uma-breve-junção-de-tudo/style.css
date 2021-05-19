@@ -34,6 +34,7 @@ html {
     background: red;
     font-size: 2rem;
     border-radius: 0.5rem;
+    box-shadow: inset 5px 5px 6px 0 black, 5px 5px 5px rgba(0, 0, 0, 0.7);
 
 }
 /*Menu de cima*/
