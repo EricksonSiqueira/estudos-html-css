@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+.grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid; /*Setando pra grid*/
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /*tamanho de cada coluna*/ /*fr = 1 fragmento da pagina*/ /*repeat repete primeiro parametro a quantidade de vezes que vai se repetir e segundo parametro o comando a ser repetido*/
+    /*auto-fill deixa o programa escolher quantas colunas vão ter*/
+    grid-template-rows:repeat(3,1fr 2fr);
+    gap: 30px; /*espaço entre elas*/
+
+}
+
+.grid div {
+    background-color: tomato;
+    min-height: 80px;
+}
+
+.grid div:nth-child(5){
+    /*grid-column-start: 1; onde ela começa
+    grid-column-end: 4; onde termina
+    grid-row-start: 3; onde começa 
+    grid-row-end: 6; onde termina*/
+    background-color: darkorchid;
+
+    grid-row: span 1;  /*ocupa 2 linhas*/
+    grid-column: span 2; /*ocupa 2 colunas*/
+}
+
+@media (max-width: 768px) {
+    .grid div:nth-child(5) {
+        grid-column: span 1;
+    }
+}
