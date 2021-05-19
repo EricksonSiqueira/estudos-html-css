@@ -6,21 +6,57 @@
 
 .flex-container {
     display: flex;
-    /*flex-direction: column; Direção principal (nesse caso linha)*/
-    justify-content: flex-start; /*alinhamento principal*/
+    /*flex-direction: row;  Direção principal (nesse caso linha)*/
+    justify-content: space-between;  /*alinhamento principal*/
     align-items: flex-start; /*alinhamento perpendicular*/
-    align-content:space-around; /*Alinhamento só do conteúdo*/ 
+    /*align-content:space-around; Alinhamento só do conteúdo*/ 
     background-color: yellow;
-    height: 640px;
+    /*atalho pra flex direction e flex wrap*/
+    flex-flow:    row      nowrap;
+             /*direction   wrap */
+    height: 50vh;
 
 
-    flex-wrap: wrap; /*permite que ele quebre linha caso tenha muitos elementos*/
+    /*flex-wrap: wrap; permite que ele quebre linha caso tenha muitos elementos*/
 
 }
 
 .flex-item {
-    width: 33.33%;
+    /*flex-grow: 1; 1 permite que distribua o espaço para os elementos 0 não permite*/
+    /*flex-shrink: 0; 1 permite os elementos diminuirem 0 não permite*/
+    /*flex-basis: 320px; Da um tamanho pro elemento antes de dividir como se fosse um min width*/
+
+    /*Atalho para isso tudo de cima
+    flex: 1     1      320px;*/
+       /*grow  shrink  basis*/
+    width: 100%;
     color: white;
     background-color: red;
+}
+
+.flex-item:nth-child(2), .flex-item:nth-child(4) {
+    /*flex: 2 1 320px;
+    o número representa proporção 1 x1 2 x2 e por ai vai tanto pro grow quanto por shrink
+    background-color: purple;*/
+    align-self: center; /*align-self alinha somente o elemento selecionado*/
+    text-align: center;
+}
+.flex-item:nth-child(3){
+    align-self: flex-end;
+    text-align: center; /*text-align alinha o texto do elemento*/
+}
+
+.flex-item:nth-child(1), .flex-item:nth-child(5){
+    text-align: center;
+}
+
+.flex-item:nth-child(1){
+    order: -1; /*order: Altera a ordem dos elementos*/
+}
+.flex-item:nth-child(2){
+    order: -2;
+}
+.flex-item:nth-child(4){
+    order: -1;
 }
 
