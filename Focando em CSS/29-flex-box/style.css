@@ -2,25 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 62.5%;
 }
 
 .flex-container {
     display: flex;
-    flex-direction: column; /*Direção principal (nesse caso linha)*/
-    justify-content: space-around; /*alinhamento principal*/
-    align-items: center; /*alinhamento perpendicular*/  background-color: yellow;
-    height: 50vh;
+    /*flex-direction: column; Direção principal (nesse caso linha)*/
+    justify-content: flex-start; /*alinhamento principal*/
+    align-items: flex-start; /*alinhamento perpendicular*/
+    align-content:space-around; /*Alinhamento só do conteúdo*/ 
+    background-color: yellow;
+    height: 640px;
+
+
+    flex-wrap: wrap; /*permite que ele quebre linha caso tenha muitos elementos*/
 
 }
 
 .flex-item {
+    width: 33.33%;
     color: white;
     background-color: red;
-    margin: 1rem;
-    font-size: 2rem;
+}
 
-}
-.flex-item:nth-child(3) {
-    font-size: 4rem;
-}
