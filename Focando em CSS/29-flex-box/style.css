@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column; /*Direção principal (nesse caso linha)*/
+    justify-content: space-around; /*alinhamento principal*/
+    align-items: center; /*alinhamento perpendicular*/  background-color: yellow;
+    height: 50vh;
+
+}
+
+.flex-item {
+    color: white;
+    background-color: red;
+    margin: 1rem;
+    font-size: 2rem;
+
+}
+.flex-item:nth-child(3) {
+    font-size: 4rem;
+}
