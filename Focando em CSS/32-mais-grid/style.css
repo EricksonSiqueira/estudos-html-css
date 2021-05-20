@@ -5,23 +5,36 @@
 }
 
 .grid {
-    max-width: 1200px;
+    max-width: 1230px;
     display: grid;
-    margin: 0 auto;
     grid-template-columns:[um] 1fr [dois] 1fr [tres] 1fr [quatro] 1fr ;
     grid-template-rows: repeat(3, 1fr 2fr);
-    gap: 30px;
+    margin-right: -60px;
+    /*column-gap: 30px; Só coluna*/
+    /*row-gap: 30px; Só na linha*/
+    /*gap: 20px 20px; Atalho para linha e coluna*/
+
+
 }
 
 .grid div {
     background-color: tomato;
     min-height: 60px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: hidden;
+
 }
 
 .grid div:nth-child(5) {
     /*grid-column: span 2 / span 2; começa na 1 termina na quatro
     grid-row: um / quatro;*/
 
-    grid-area: 1 / 1 / 4 / 4; /* linha inicia / coluna inicia / linha termina / coluna termina*/
+    /*grid-area: 1 / 1 / 4 / 4;  linha inicia / coluna inicia / linha termina / coluna termina*/
 
 }
